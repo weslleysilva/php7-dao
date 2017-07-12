@@ -1,10 +1,8 @@
 <?php 
 require_once("config.php");
 
-$root = new Usuario();
+$logar = new Usuario();
+$logar->login("root","89743");
 
-$root->loadByid(3);
-
-echo $root;
-
+echo $logar;
  ?>
